@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="fogo.png">
+  <link rel="stylesheet" type="text/css" href="diciplinas.css" />
+  <link rel="stylesheet" type="text/css" href="disciplinas_responsivo.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Balbino: As chamas da cultura.">
+  <meta name="Keywords" content="CULTURA, RESISTÊNCIA, PATRIMÔNIO, MEMÓRIA, PRESERVAÇÃO">
+  <meta name="robots" content="index, fallow">
+  <meta name="author" content="Raul Silva">
+  <script src="jquery-3.1.0.min.js"></script>
+  <title>Livro</title>
+</head>
+<body>
+  <!--Menu-->
+
+  <div id="menu">
+    <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a href="catalogo.html">Catalogo</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="atividades.html">Projeto</a></li>
+      <li><a href="fotos.html">Fotos</a></li>
+      <li><a href="sobre.html">Guia Turistico</a></li>
+      <li><a href="livro.html">Livro e DvD</a></li>
+    </ul>
+  </div>
+  <!--Outro Menu-->
+    <header id="menu-header">
+      <button class="btn-menu">Menu</button>
+      <nav class="menu">
+        <ul>
+          <li><a id="voltar" href="#" >Voltar</a></li>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="catalogo.html">Catalogo</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="atividades.html">Projeto</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="sobre.html">Guia Turistico</a></li>
+          <li><a href="livro.html">Livro e DvD</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cim"><a href="#top"><img src="cima.jpg" alt="" class="cima"></a></div>
+    <script>
+      $(".btn-menu").click(function(){
+                  $(".menu").show()
+                  });
+      $("#voltar").click(function(){
+                  $(".menu").hide()
+                  });
+    </script>
+    <!--Corpo-->
+    <main>
+        <article class="introducao">
+            <h2>Livro</h2>
+          </article>
+    </main>
+
+        <center>
+          <img src="livro.png" alt="" class="imagem">
+        </center>
+        <a href="http:/goo.gl/WOPfMz" target="_blank"><button class="btn red" type="button"><span>Baixar o livro</span></button></a>
+
+
+      <main>
+          <article class="introducao">
+              <h2>Video</h2>
+            </article>
+      </main>
+
+      <video src="video.mp4" controls="controls">
+
+
+      </video>
+
+  <div class="fundo-footer">
+              <center>
+                <h3>Balbino: As chamas da cultura.</h3>
+              <h3>CULTURA, RESISTÊNCIA, PATRIMÔNIO, MEMÓRIA, PRESERVAÇÃO, </h3>
+              <h4>₢ Todos os direitos reservados.</h4>
+              </center>
+  </div>
+</body>
+</html>
