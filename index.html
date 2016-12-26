@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Balbino: As chamas da cultura.</title>
+<link rel="icon" href="fogo.png">
+<link rel="stylesheet" type="text/css" href="Untitled-1.css">
+<link rel="stylesheet" type="text/css" href="estilo-portugues.css">
+<link rel="stylesheet" type="text/css" href="Responsivo.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" content="Balbino: As chamas da cultura.">
+<meta name="Keywords" content="CULTURA, RESISTÊNCIA, PATRIMÔNIO, MEMÓRIA, PRESERVAÇÃO">
+<meta name="robots" content="index, fallow">
+<meta name="author" content="Raul Silva">
+<script src="jquery-3.1.0.min.js"></script>
+
+<style>
+.slideshow-container{
+
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<!--Menu-->
+
+<div id="menu">
+	<ul>
+    <li><a  href="index.html">Home</a></li>
+    <li><a href="catalogo.html">Catalogo</a></li>
+    <li><a href="historia.html">História</a></li>
+    <li><a href="atividades.html">Projeto</a></li>
+    <li><a href="fotos.html">Fotos</a></li>
+    <li><a href="sobre.html">Guia Turistico</a></li>
+<li><a href="livro.html">Livro e DvD</a></li>
+	</ul>
+</div>
+<!--Outro Menu-->
+	<header id="menu-header">
+		<button class="btn-menu">Menu</button>
+		<nav class="menu">
+			<ul>
+				<li><a id="voltar" href="#" >Voltar</a></li>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="atividades.html">Projeto</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="sobre.html">Guia Turistico</a></li>
+        <li><a href="livro.html">Livro e DvD</a></li>
+			</ul>
+		</nav>
+	</header>
+	<script>
+		$(".btn-menu").click(function(){
+								$(".menu").show()
+								});
+		$("#voltar").click(function(){
+								$(".menu").hide()
+								});
+	</script>
+<!--Imagem Logo-->
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <a href="fundo.png"><img style="margin: 5% 10% 0 10% ;width:80%;" src="fundo.png" style="width:100%"></a>
+</div>
+<div class="mySlides fade">
+  <a href="IMG-20161213-WA0008.jpg"><img style="margin: 5% 10% 0 10% ;width:80%;" src="IMG-20161213-WA0008.jpg" style="width:100%"></a>
+</div>
+<div class="mySlides fade">
+  <a href="IMG-20161213-WA0018.jpg"><img style=" margin: 5% 10% 0 10% ;width:80%;" src="IMG-20161213-WA0018.jpg" style="width:100%"></a>
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!--Conteudo-->
+<main>
+        <article class="introducao">
+            <h2>Bem-vindos!</h2>
+            <h3>
+              O Balbino é uma comunidade litorânea localizada no município de Cascavel-CE, formada por uma história rica em valores culturais que está sendo esquecida pelos próprios moradores. Sua história inicia-se com a pesca artesanal e a relação entre o homem e o mar, atividade predominante na região. Devido a ganância de algumas pessoas inescrupulosas, por pouco os moradores da comunidade do Balbino não perderam suas terras, num evento criminoso conhecido como “Balbino em chamas”.                                                        Apesar disso a comunidade ainda não recebe o devido reconhecimento por sua contribuição para a cultura local. Tal evento mesmo tendo marcado a vida dos moradores não apagou as chamas da memória que ainda se mantém viva tento na arte como no cotidiano da população da região.
+            </h3>
+        </article>
+        <!-- Sobre o Photoshop-->
+        <hr class="style1">
+
+        <div class="maker">
+           <a href="n1.jpg"><img class="shop" src="n1.jpg"  alt="mac"></a>
+            <article class="introducao">
+                <h2>Relevância do Projeto </h2>
+                <h3>
+                Partindo do pressuposto de que as comunidades devem zelar pelo resgate de sua história e chamar para si a responsabilidade dos bens de interesse local, o trabalho aborda a questão das políticas públicas e sociais de preservação dos patrimônios culturais e naturais. Promovendo uma maior divulgação da grande riqueza natural e sociocultural do Balbino para a sociedade em geral, com a continuação desse trabalho mais pessoas mudarão a mentalidade em relação a suas raízes e a própria identidade cultural.
+                </h3>
+								</div>
+            </article>
+        </div>
+			</div>
+      <iframe style="width:90%; margin: 0 5% 2% 5%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.8582006104699!2d-38.244300617142656!3d-4.134941792403488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf981958d7fa4d744!2sEdson+Queiroz%2C+EEEP!5e0!3m2!1sspt-BR!2sbr!4v1471215915626" width="50%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="cim"><a style="transition:  all .10s;" href="#top"><img src="cima.jpg" alt="" class="cima"></a></div>
+    </main>
+    <main>
+      <center><img src="gmail.png" style="width: 80px;  ; " alt="" class="imagem"></center>
+        <article class="introducao">
+            <h2>Contatos</h2>
+            <h3>
+                Em caso de dúvida, crítica ou sujestão construtiva entre em contato com: <span class="emal">balbinoprojeto@gmail.com</span>
+            </h3> </article>
+            <center><img src="facebook.png" style="width: 80px;  ; " alt="" class="imagem"></center>
+              <article class="introducao">
+                  <h2>Contatos</h2>
+                  <h3>
+                    Essa é a nossa pagina no facebook, entre e conheça mais sobre o nosso projeto: <span class="emal"><a target="_blank" style="color:rgb(19, 51, 215);" href="https://www.facebook.com/culturadobalbino/?fref=ts">Projeto Balbino</a></span>
+                  </h3> </article>
+    </main>
+			<div class="fundo-footer">
+                	<center>
+                    <h3>Balbino: As chamas da cultura.</h3>
+                	<h3>CULTURA, RESISTÊNCIA, PATRIMÔNIO, MEMÓRIA, PRESERVAÇÃO, </h3>
+                	<h4>₢ Todos os direitos reservados.</h4>
+                	</center>
+		 	</div>
+</body>
+</html>
